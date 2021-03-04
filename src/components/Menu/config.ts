@@ -4,7 +4,7 @@ const config: MenuEntry[] = [
   {
     label: 'Home',
     icon: 'HomeIcon',
-    href: 'https://pancakeswap.finance/',
+    href: '/',
   },
   {
     label: 'Trade',
@@ -24,88 +24,105 @@ const config: MenuEntry[] = [
   {
     label: 'Farms',
     icon: 'FarmIcon',
-    href: 'https://pancakeswap.finance/farms',
+    href: 'https://koaladefi.finance/farms',
   },
   {
     label: 'Pools',
     icon: 'PoolIcon',
-    href: 'https://pancakeswap.finance/syrup',
+    href: 'https://koaladefi.finance/pools',
   },
   {
-    label: 'Lottery',
-    icon: 'TicketIcon',
-    href: 'https://pancakeswap.finance/lottery',
+    label: 'Certik Audit (In-Progress)',
+    icon: 'ShieldIcon', // ShieldIcon
+    href: 'https://twitter.com/KoalaDefi/status/1367218225310818308',
+    target: '_blank',
   },
-  {
-    label: 'NFT',
-    icon: 'NftIcon',
-    href: 'https://pancakeswap.finance/nft',
-  },
-  {
-    label: 'Teams & Profile',
-    icon: 'GroupsIcon',
-    calloutClass: 'rainbow',
-    items: [
-      {
-        label: 'Leaderboard',
-        href: 'https://pancakeswap.finance/teams',
-      },
-      {
-        label: 'Task Center',
-        href: 'https://pancakeswap.finance/profile/tasks',
-      },
-      {
-        label: 'Your Profile',
-        href: 'https://pancakeswap.finance/profile',
-      },
-    ],
-  },
+  // {
+  //   label: 'Pools',
+  //   icon: 'PoolIcon',
+  //   href: '/pools',
+  // },
+  // {
+  //   label: 'Lottery',
+  //   icon: 'TicketIcon',
+  //   href: '/lottery',
+  // },
+  // {
+  //   label: 'NFT',
+  //   icon: 'NftIcon',
+  //   href: '/nft',
+  // },
   {
     label: 'Info',
     icon: 'InfoIcon',
     items: [
       {
-        label: 'Overview',
-        href: 'https://pancakeswap.info',
+        label: 'PancakeSwap',
+        href: 'https://pancakeswap.info/token/0xba26397cdff25f0d26e815d218ef3c77609ae7f1',
+        target: '_blank',
       },
       {
-        label: 'Tokens',
-        href: 'https://pancakeswap.info/tokens',
+        label: 'Token',
+        href: 'https://doc.koaladefi.finance/tokennomics/lyptus-token',
+        target: '_blank',
       },
       {
-        label: 'Pairs',
-        href: 'https://pancakeswap.info/pairs',
+        label: 'Contracts',
+        href: 'https://doc.koaladefi.finance/security/contracts',
+        target: '_blank',
       },
       {
-        label: 'Accounts',
-        href: 'https://pancakeswap.info/accounts',
+        label: 'Transparency',
+        href: 'https://doc.koaladefi.finance/transparency/transparency',
+        target: '_blank',
       },
+      // {
+      //   label: 'CoinGecko',
+      //   href: 'https://www.coingecko.com/en/coins/koalatoken',
+      // },
+      // {
+      //   label: 'CoinMarketCap',
+      //   href: 'https://coinmarketcap.com/currencies/koalatoken/',
+      // },
     ],
   },
-  {
-    label: 'IFO',
-    icon: 'IfoIcon',
-    href: 'https://pancakeswap.finance/ifo',
-  },
+  // {
+  //   label: 'IFO',
+  //   icon: 'IfoIcon',
+  //   href: '/ifo',
+  // },
   {
     label: 'More',
     icon: 'MoreIcon',
     items: [
-      {
-        label: 'Voting',
-        href: 'https://voting.pancakeswap.finance',
-      },
+      // {
+      //   label: 'Voting',
+      //   href: 'https://voting.pancakeswap.finance',
+      // },
       {
         label: 'Github',
-        href: 'https://github.com/pancakeswap',
+        href: 'https://github.com/koaladefi',
+        target: '_blank',
       },
       {
         label: 'Docs',
-        href: 'https://docs.pancakeswap.finance',
+        href: 'https://doc.koaladefi.finance/',
+        target: '_blank',
       },
       {
         label: 'Blog',
-        href: 'https://pancakeswap.medium.com',
+        href: 'https://koaladefi.medium.com/',
+        target: '_blank',
+      },
+      {
+        label: 'Announcements',
+        href: 'https://t.me/koaladefi',
+        target: '_blank',
+      },
+      {
+        label: 'Telegram',
+        href: 'https://t.me/koaladefichat',
+        target: '_blank',
       },
     ],
   },
