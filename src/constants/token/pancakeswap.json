@@ -11,6 +11,13 @@
   "keywords": ["pancake", "default"],
   "tokens": [
     {
+      "name": "Koala Lyptus token",
+      "symbol": "LYPTUS",
+      "address": "0xba26397cdff25f0d26e815d218ef3c77609ae7f1",
+      "chainId": 56,
+      "decimals": 18
+    },
+    {
       "name": "WBNB Token",
       "symbol": "WBNB",
       "address": "0xae13d989dac2f0debff460ac112a837c89baa7cd",
@@ -604,8 +611,7 @@
       "symbol": "BFI",
       "address": "0x81859801b01764D4f0Fa5E64729f5a6C3b91435b",
       "chainId": 56,
-      "decimals": 18,
-      "logoURI": "/images/coins/bearn.png"
+      "decimals": 18
     },
     {
       "name": "bDollar",
@@ -625,188 +631,6 @@
       "name": "Elrond",
       "symbol": "EGLD",
       "address": "0xbf7c81fff98bbe61b40ed186e4afd6ddd01337fe",
-      "chainId": 56,
-      "decimals": 18
-    },
-    {
-      "name": "AUTOv2",
-      "symbol": "AUTO",
-      "address": "0xa184088a740c695e156f91f5cc086a06bb78b827",
-      "chainId": 56,
-      "decimals": 18
-    },
-    {
-      "name": "Hedget",
-      "symbol": "HGET",
-      "address": "0xC7d8D35EBA58a0935ff2D5a33Df105DD9f071731",
-      "chainId": 56,
-      "decimals": 6
-    },
-    {
-      "name": "Litentry",
-      "symbol": "LIT",
-      "address": "0xb59490ab09a0f526cc7305822ac65f2ab12f9723",
-      "chainId": 56,
-      "decimals": 18
-    },
-    {
-      "name": "Linear Finance",
-      "symbol": "LINA",
-      "address": "0x762539b45a1dcce3d36d080f74d1aed37844b878",
-      "chainId": 56,
-      "decimals": 18
-    },
-    {
-      "name": "Beacon ETH",
-      "symbol": "BETH",
-      "address": "0x250632378e573c6be1ac2f97fcdf00515d0aa91b",
-      "chainId": 56,
-      "decimals": 18
-    },
-    {
-      "name": "lUSD",
-      "symbol": "lUSD",
-      "address": "0x23e8a70534308a4AAF76fb8C32ec13d17a3BD89e",
-      "chainId": 56,
-      "decimals": 18
-    },
-    {
-      "name": "SafePal Token",
-      "symbol": "SFP",
-      "address": "0xd41fdb03ba84762dd66a0af1a6c8540ff1ba5dfb",
-      "chainId": 56,
-      "decimals": 18
-    },
-    {
-      "name": "Compound Finance",
-      "symbol": "COMP",
-      "address": "0x52ce071bd9b1c4b00a0b92d298c512478cad67e8",
-      "chainId": 56,
-      "decimals": 18
-    },
-    {
-      "name": "Swirge Pay",
-      "symbol": "SWGb",
-      "address": "0xe40255c5d7fa7ceec5120408c78c787cecb4cfdb",
-      "chainId": 56,
-      "decimals": 18
-    },
-    {
-      "name": "renBTC",
-      "symbol": "renBTC",
-      "address": "0xfCe146bF3146100cfe5dB4129cf6C82b0eF4Ad8c",
-      "chainId": 56,
-      "decimals": 8
-    },
-    {
-      "name": "renDOGE",
-      "symbol": "renDOGE",
-      "address": "0xc3fed6eb39178a541d274e6fc748d48f0ca01cc3",
-      "chainId": 56,
-      "decimals": 8
-    },
-    {
-      "name": "anyMTLX",
-      "symbol": "anyMTLX",
-      "address": "0x5921dee8556c4593eefcfad3ca5e2f618606483b",
-      "chainId": 56,
-      "decimals": 18
-    },
-    {
-      "name": "ZeroSwapToken",
-      "symbol": "ZEE",
-      "address": "0x44754455564474a89358b2c2265883df993b12f0",
-      "chainId": 56,
-      "decimals": 18
-    },
-    {
-      "name": "Berry",
-      "symbol": "BRY",
-      "address": "0xf859Bf77cBe8699013d6Dbc7C2b926Aaf307F830",
-      "chainId": 56,
-      "decimals": 18
-    },
-    {
-      "name": "Swingby",
-      "symbol": "SWINGBY",
-      "address": "0x71DE20e0C4616E7fcBfDD3f875d568492cBE4739",
-      "chainId": 56,
-      "decimals": 18
-    },
-    {
-      "name": "Dodo",
-      "symbol": "DODO",
-      "address": "0x67ee3cb086f8a16f34bee3ca72fad36f7db929e2",
-      "chainId": 56,
-      "decimals": 18
-    },
-    {
-      "name": "Sushi",
-      "symbol": "SUSHI",
-      "address": "0x947950bcc74888a40ffa2593c5798f11fc9124c4",
-      "chainId": 56,
-      "decimals": 18
-    },
-    {
-      "name": "OPEN Governance Token",
-      "symbol": "bOPEN",
-      "address": "0xF35262a9d427F96d2437379eF090db986eaE5d42",
-      "chainId": 56,
-      "decimals": 18
-    },
-    {
-      "name": "BoringDAO",
-      "symbol": "BOR",
-      "address": "0x92d7756c60dcfd4c689290e8a9f4d263b3b32241",
-      "chainId": 56,
-      "decimals": 18
-    },
-    {
-      "name": "renZEC",
-      "symbol": "renZEC",
-      "address": "0x695FD30aF473F2960e81Dc9bA7cB67679d35EDb7",
-      "chainId": 56,
-      "decimals": 8
-    },
-    {
-      "name": "Multiplier",
-      "symbol": "bMXX",
-      "address": "0x4131b87f74415190425ccd873048c708f8005823",
-      "chainId": 56,
-      "decimals": 18
-    },
-    {
-      "name": "IoTeX",
-      "symbol": "IOTX",
-      "address": "0x9678e42cebeb63f23197d726b29b1cb20d0064e5",
-      "chainId": 56,
-      "decimals": 18
-    },
-    {
-      "name": "xMARK",
-      "symbol": "xMARK",
-      "address": "0x26a5dfab467d4f58fb266648cae769503cec9580",
-      "chainId": 56,
-      "decimals": 9
-    },
-    {
-      "name": "TokenPocket",
-      "symbol": "TPT",
-      "address": "0xeca41281c24451168a37211f0bc2b8645af45092",
-      "chainId": 56,
-      "decimals": 4
-    },
-    {
-      "name": "Yieldwatch",
-      "symbol": "WATCH",
-      "address": "0x7a9f28eb62c791422aa23ceae1da9c847cbec9b0",
-      "chainId": 56,
-      "decimals": 18
-    },
-    {
-      "name": "KoalaDeFi Token",
-      "symbol": "LYPTUS",
-      "address": "0xba26397cdff25f0d26e815d218ef3c77609ae7f1",
       "chainId": 56,
       "decimals": 18
     }
