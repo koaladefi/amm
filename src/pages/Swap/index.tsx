@@ -1,8 +1,8 @@
 import { CurrencyAmount, JSBI, Token, Trade } from '@pancakeswap-libs/sdk'
-import React, { useCallback, useContext, useEffect, useMemo, useState } from 'react'
+import React, { useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react'
 import { ArrowDown } from 'react-feather'
 import { CardBody, ArrowDownIcon, Button, IconButton, Text } from '@pancakeswap-libs/uikit'
-import { ThemeContext } from 'styled-components'
+import styled, { ThemeContext } from 'styled-components'
 import AddressInputPanel from 'components/AddressInputPanel'
 import Card, { GreyCard } from 'components/Card'
 import { AutoColumn } from 'components/Column'
@@ -38,6 +38,7 @@ import AppBody from '../AppBody'
 
 const Swap = () => {
   const loadedUrlParams = useDefaultsFromURLSearch()
+  const showBushWarning = useRef(false)
 
   // token warning stuff
   const [loadedInputCurrency, loadedOutputCurrency] = [
@@ -75,7 +76,8 @@ const Swap = () => {
   const { wrapType, execute: onWrap, inputError: wrapInputError } = useWrapCallback(
     currencies[Field.INPUT],
     currencies[Field.OUTPUT],
-    typedValue
+    typedValue,
+    showBushWarning
   )
   const showWrap: boolean = wrapType !== WrapType.NOT_APPLICABLE
   const trade = showWrap ? undefined : v2Trade
@@ -235,8 +237,10 @@ const Swap = () => {
       if (inputCurrency.symbol.toLowerCase() === 'syrup') {
         checkForSyrup(inputCurrency.symbol.toLowerCase(), 'Selling')
       }
+
+      showBushWarning.current = (inputCurrency.symbol === "LYPTUS")
     },
-    [onCurrencySelection, setApprovalSubmitted, checkForSyrup]
+    [onCurrencySelection, setApprovalSubmitted, checkForSyrup, showBushWarning]
   )
 
   const handleMaxInput = useCallback(() => {
@@ -255,9 +259,29 @@ const Swap = () => {
     [onCurrencySelection, checkForSyrup]
   )
 
+  const ActionLink = styled.a`
+    color: #ed4b9e;
+  `
+
+  const TextWarning = styled(Text)`
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid lightgray;
+    border-radius: 20px;
+    text-align: center;
+  `
+
   return (
     <>
       <CardNav />
+      {showBushWarning.current === true ? (
+        <TextWarning>
+          Thing about selling some $LYPTUS? <br/> Did you already visit the <ActionLink
+          href="https://koaladefi.finance/bush"
+          target="_blank"
+        >Bush</ActionLink>?
+        </TextWarning>
+        ): null }
       <AppBody>
         <Wrapper id="swap-page">
           <ConfirmSwapModal
