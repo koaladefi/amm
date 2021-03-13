@@ -261,7 +261,6 @@ const Swap = () => {
 
   const ActionLink = styled.a`
     color: #ed4b9e;
-    font-size: 14px;
   `
 
   const TextWarning = styled(Text)`
