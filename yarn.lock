@@ -1088,9 +1088,9 @@
     regenerator-runtime "^0.13.4"
 
 "@babel/runtime@^7.8.7":
-  version "7.13.9"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.13.9.tgz#97dbe2116e2630c489f22e0656decd60aaa1fcee"
-  integrity sha512-aY2kU+xgJ3dJ1eU6FMB9EH8dIe8dmusF1xEku52joLvw6eAFN0AI+WxCLDnpev2LEejWBAy2sBvBOBAjI3zmvA==
+  version "7.13.10"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.13.10.tgz#47d42a57b6095f4468da440388fdbad8bebf0d7d"
+  integrity sha512-4QPkjJq6Ns3V/RgpEahRk+AGfL0eO6RHHtTWoNNr5mO49G6B5+X6d6THgWEAvTrznU5xYpbAlVKRYcsCgh/Akw==
   dependencies:
     regenerator-runtime "^0.13.4"
 
@@ -2124,7 +2124,7 @@
 
 "@pancakeswap-libs/uikit@koaladefi/uikit#releases_refresh":
   version "0.13.1"
-  resolved "https://codeload.github.com/koaladefi/uikit/tar.gz/efadfb09cc288795272f3af84d27e0c6117462e9"
+  resolved "https://codeload.github.com/koaladefi/uikit/tar.gz/29bb9a948df27e1dded5d559d4e19061bb0b52b3"
   dependencies:
     "@types/lodash" "^4.14.162"
     "@types/styled-system" "^5.1.10"
