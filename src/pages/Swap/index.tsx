@@ -278,7 +278,7 @@ const Swap = () => {
       {showBushWarning.current === true ? (
         <TextWarning>
           Thing about selling some $LYPTUS? <br/> Did you already visit the <ActionLink
-          href=" https://pancakeswap.medium.com/urgent-action-required-changes-to-syrup-pools-70b98d7b2541"
+          href="https://koaladefi.finance/bush"
           target="_blank"
         >Bush</ActionLink>?
         </TextWarning>
