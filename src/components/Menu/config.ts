@@ -27,14 +27,14 @@ const config: MenuEntry[] = [
     href: 'https://koaladefi.finance/farms',
   },
   {
-    label: 'Bush',
-    icon: 'BushIcon',
-    href: 'https://koaladefi.finance/bush',
-  },
-  {
     label: 'Pools',
     icon: 'PoolIcon',
     href: 'https://koaladefi.finance/pools',
+  },
+  {
+    label: 'Bush',
+    icon: 'BushIcon',
+    href: 'https://koaladefi.finance/bush',
   },
   {
     label: 'Certik Audit (In-Progress)',
