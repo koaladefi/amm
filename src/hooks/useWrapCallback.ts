@@ -1,5 +1,5 @@
 import { Currency, currencyEquals, ETHER, WETH } from '@pancakeswap-libs/sdk'
-import { useMemo } from 'react'
+import { MutableRefObject, useMemo } from 'react'
 import { tryParseAmount } from '../state/swap/hooks'
 import { useTransactionAdder } from '../state/transactions/hooks'
 import { useCurrencyBalance } from '../state/wallet/hooks'
@@ -22,7 +22,8 @@ const NOT_APPLICABLE = { wrapType: WrapType.NOT_APPLICABLE }
 export default function useWrapCallback(
   inputCurrency: Currency | undefined,
   outputCurrency: Currency | undefined,
-  typedValue: string | undefined
+  typedValue: string | undefined,
+  showBushWarning: MutableRefObject<boolean>
 ): { wrapType: WrapType; execute?: undefined | (() => Promise<void>); inputError?: string } {
   const { chainId, account } = useActiveWeb3React()
   const wethContract = useWETHContract()
@@ -35,6 +36,8 @@ export default function useWrapCallback(
     if (!wethContract || !chainId || !inputCurrency || !outputCurrency) return NOT_APPLICABLE
 
     const sufficientBalance = inputAmount && balance && !balance.lessThan(inputAmount)
+
+    showBushWarning.current = (inputCurrency.symbol === "LYPTUS")
 
     if (inputCurrency === ETHER && currencyEquals(WETH[chainId], outputCurrency)) {
       return {
@@ -71,5 +74,5 @@ export default function useWrapCallback(
     } 
       return NOT_APPLICABLE
     
-  }, [wethContract, chainId, inputCurrency, outputCurrency, inputAmount, balance, addTransaction])
+  }, [wethContract, chainId, inputCurrency, outputCurrency, inputAmount, balance, addTransaction, showBushWarning])
 }
