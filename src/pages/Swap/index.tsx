@@ -1,7 +1,7 @@
 import { CurrencyAmount, JSBI, Token, Trade } from '@pancakeswap-libs/sdk'
 import React, { useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react'
 import { ArrowDown } from 'react-feather'
-import { CardBody, ArrowDownIcon, Button, IconButton, Text } from '@pancakeswap-libs/uikit'
+import { CardBody, ArrowDownIcon, Button, IconButton, Text, Alert, Flex, Link } from '@pancakeswap-libs/uikit'
 import styled, { ThemeContext } from 'styled-components'
 import AddressInputPanel from 'components/AddressInputPanel'
 import Card, { GreyCard } from 'components/Card'
@@ -9,7 +9,7 @@ import { AutoColumn } from 'components/Column'
 import ConfirmSwapModal from 'components/swap/ConfirmSwapModal'
 import CurrencyInputPanel from 'components/CurrencyInputPanel'
 import CardNav from 'components/CardNav'
-import { AutoRow, RowBetween } from 'components/Row'
+import Row, { AutoRow, RowBetween } from 'components/Row'
 import AdvancedSwapDetailsDropdown from 'components/swap/AdvancedSwapDetailsDropdown'
 import confirmPriceImpactWithoutFee from 'components/swap/confirmPriceImpactWithoutFee'
 import { ArrowWrapper, BottomGrouping, SwapCallbackError, Wrapper } from 'components/swap/styleds'
@@ -273,6 +273,16 @@ const Swap = () => {
 
   return (
     <>
+      <Flex justifyContent="center" flexDirection="column" alignItems="center" mb="4">
+        <Alert title="">
+          <Text as="p">We’re very happy to announce that we are starting a partnership with <a href="https://apeswap.finance" target="_blank" rel="noreferrer noopener"><strong>Apeswap.finance</strong></a></Text>
+          <Text as="p">A new interface was released for trading <strong>🍃 $LYPTUS</strong> via ApeSwap DEX pair contracts.</Text>
+          <Text as="p" style={{ margin: '5px 0', color: '#45d9bb' }}><a href="https://swape.koaladefi.finance/"  target="_blank" rel="noreferrer noopener">This new interface is available here : swape.koaladefi.finance</a></Text>
+          <Text fontSize="14px" style={{ margin: '5px 0' }}>
+            <a href="https://koaladefi.medium.com/partnership-with-apeswap-finance-c1dd2dd44eee" target="_blank" rel="noreferrer noopener">Learn more about the partnership</a>
+          </Text>
+        </Alert>
+      </Flex>
       <CardNav />
       {showBushWarning.current === true ? (
         <TextWarning>
