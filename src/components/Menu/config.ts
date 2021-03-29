@@ -7,17 +7,36 @@ const config: MenuEntry[] = [
     href: '/',
   },
   {
-    label: 'Trade',
+    label: 'Trade (New with APE)',
     icon: 'TradeIcon',
-    initialOpenState: true,
     items: [
       {
         label: 'Exchange',
-        href: '/swap',
+        href:
+          'https://swape.koaladefi.finance/#/swap?inputCurrency=0xe9e7cea3dedca5984780bafc599bd69add087d56&outputCurrency=0xba26397cdff25f0d26e815d218ef3c77609ae7f1',
+        target: '_blank',
       },
       {
         label: 'Liquidity',
-        href: '/pool',
+        href:
+          'https://swape.koaladefi.finance/#/add/0xe9e7cea3dedca5984780bafc599bd69add087d56/0xba26397cdff25f0d26e815d218ef3c77609ae7f1',
+        target: '_blank',
+      },
+    ],
+  },
+  {
+    label: 'Trade (Legacy)',
+    icon: 'TradeIcon',
+    items: [
+      {
+        label: 'Exchange',
+        href:
+          'https://swap.koaladefi.finance/#/swap?inputCurrency=0xe9e7cea3dedca5984780bafc599bd69add087d56&outputCurrency=0xba26397cdff25f0d26e815d218ef3c77609ae7f1',
+      },
+      {
+        label: 'Liquidity',
+        href:
+          'https://swap.koaladefi.finance/#/add/0xe9e7cea3dedca5984780bafc599bd69add087d56/0xba26397cdff25f0d26e815d218ef3c77609ae7f1',
       },
     ],
   },
