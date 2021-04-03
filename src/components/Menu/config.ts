@@ -56,15 +56,15 @@ const config: MenuEntry[] = [
     href: 'https://koaladefi.finance/bush',
   },
   {
-    label: 'Techrate Audit',
+    label: 'Certik Audit',
     icon: 'ShieldIcon',
-    href: 'https://koaladefi.finance/files/audit_techrate.pdf',
+    href: 'https://koaladefi.finance/files/audit_certik.pdf',
     target: '_blank',
   },
   {
-    label: 'Certik Audit (In-Progress)',
+    label: 'Techrate Audit',
     icon: 'ShieldIcon',
-    href: 'https://certik.org/projects/koaladefi',
+    href: 'https://koaladefi.finance/files/audit_techrate.pdf',
     target: '_blank',
   },
   // {
